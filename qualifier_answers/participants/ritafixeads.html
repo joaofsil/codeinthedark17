@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code in the Dark</title>
+    <style>
+        html {
+            height:100%
+        }
+        body {
+            margin: 0px;
+            background: #000;
+        }
+        .sky {
+            width:960px;
+            height:540px;
+            margin:auto;
+            overflow: hidden;
+        }
+        .babySky {
+            width:960px;
+            height:540px;
+            background: url('assets/background.png') #0e0e0e no-repeat center center;
+            animation: animatedBackground 5s linear infinite;
+            -ms-animation: animatedBackground 5s linear infinite;
+            -moz-animation: animatedBackground 5s linear infinite;
+            -webkit-animation: animatedBackground 5s linear infinite;
+        }
+        @keyframes animatedBackground {
+            from { transform: scale(2.5) }
+            to { transform: scale(1) }
+        }
+        @-webkit-keyframes animatedBackground {
+            from { transform: scale(2.5) }
+            to { transform: scale(1) }
+        }
+        @-ms-keyframes animatedBackground {
+            from { transform: scale(2.5) }
+            to { transform: scale(1) }
+        }
+        @-moz-keyframes animatedBackground {
+            from { transform: scale(2.5) }
+            to { transform: scale(1) }
+        }
+        .spaceship {
+            position:absolute;
+            top:0px;
+            opacity: 0.6;
+            width: 460px;
+            height: 160px;
+            transform: rotate(10deg);
+            -ms-transform: rotate(10deg);
+            -webkit-transform: rotate(10deg);
+            animation: animatedSpaceship 5s linear infinite;
+            -ms-animation: animatedSpaceship 5s linear infinite;
+            -moz-animation: animatedSpaceship 5s linear infinite;
+            -webkit-animation: animatedSpaceship 5s linear infinite;
+        }
+        @keyframes animatedSpaceship {
+            from { transform: scale(0.2);margin-top:-50px;margin-left:-200px; }
+            to { transform: scale(1);margin-top:360px;margin-left:560px; }
+        }
+        @-webkit-keyframes animatedSpaceship {
+            from { transform: scale(0.2);margin-top:-50px;margin-left:-200px; }
+            to { transform: scale(1);margin-top:360px;margin-left:560px; }
+        }
+        @-ms-keyframes animatedSpaceship {
+            from { transform: scale(0.2);margin-top:-50px;margin-left:-200px; }
+            to { transform: scale(1);margin-top:360px;margin-left:560px; }
+        }
+        @-moz-keyframes animatedSpaceship {
+            from { transform: scale(0.2);margin-top:-50px;margin-left:-200px; }
+            to { transform: scale(1);margin-top:360px;margin-left:560px; }
+        }
+        .spaceship .sbody {
+            float:left;
+            width: 300px;
+            height: 160px;
+            background-color: #666;
+            border-radius: 150px / 80px;
+            margin-left:-60px;
+            box-shadow: 0px 20px 0px #888;
+        }
+        .spaceship .slegs {
+            float:left;
+            width: 160px;
+            height: 160px;
+
+        }
+        .spaceship .sleg1 {
+            float:left;
+            width: 140px;
+            height: 46px;
+            background-color: #888;
+            border-radius: 70px / 23px;
+            margin-bottom:15px;
+            margin-left:20px;
+            box-shadow: 0px 10px 0px #aaa;
+        }
+        .spaceship .sleg2 {
+            float:left;
+            width: 90px;
+            height: 46px;
+            margin-left:50px;
+            background-color: #888;
+            border-radius: 45px / 23px;
+            margin-bottom:5px;
+            box-shadow: 0px 10px 0px #aaa;
+        }
+        .spaceship .sleg3 {
+            float:left;
+            width: 140px;
+            height: 46px;
+            background-color: #888;
+            border-radius: 70px / 23px;
+            box-shadow: 0px 10px 0px #aaa;
+        }
+    </style>
+</head>
+<body>
+<div class="sky">
+    <div class="babySky">
+    </div>
+    <div class="spaceship">
+        <div class="slegs">
+            <div class="sleg1"></div>
+            <div class="sleg2"></div>
+            <div class="sleg3"></div>
+        </div>
+        <div class="sbody"></div>
+    </div>
+</div>
+</body>
+</html>

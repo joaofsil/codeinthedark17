@@ -1,0 +1,97 @@
+<html>
+    <style>
+        .helmet {
+            width: 7.5cm;
+            height: 7.5cm;
+            border-radius: 99999cm;
+            background-color: #1D1D1D;
+        }
+        .side-c {
+            transform: translate(-2cm, 4cm);
+            transform-origin: 0 0;
+        }
+        .side {
+            background-color: black;
+            width: 6cm;
+            height: 8cm;
+            transform-origin: 0cm 8cm;
+            transform: rotate(15deg);
+        }
+        .side.side2 {
+            transform: translate(5.5cm) rotate(-15deg);
+            transform-origin: 0 0;
+        }
+        .all {
+            transform: translate(3cm, 1cm);
+        }
+        .mouth-c {
+            position: absolute;
+            top: 12cm;
+            left: 7.5cm;
+        }
+        
+        .mouth-c div {
+            width: 0.5cm;
+            height: 3cm;
+            background-color: white;
+        }
+        
+        .mouth-c div.a {
+            height: 1.5cm;
+            transform: translate(0, 1.5cm);
+            transform-origin: 0 0;
+        }
+        
+        .mouth-c div.b {
+            height: 2.2cm;
+            transform: translate(1.8cm, 0.8cm);
+            transform-origin: 0 0;
+        }
+        
+        .mouth-c div.b {
+            height: 2.2cm;
+            transform: translate(1.8cm, 0.8cm);
+            transform-origin: 0 0;
+        }
+        
+        .mouth-c div.d {
+            height: 2.2cm;
+            transform: translate(0.6cm, 0.8cm);
+            transform-origin: 0 0;
+        }
+        
+        .mouth-c div.e {
+            height: 1.5cm;
+            transform: translate(2.4cm, 1.5cm);
+        }
+        
+        .helmet-b {
+            position: absolute;
+            top: 9cm;
+            left: 6cm;
+            
+        }
+    </style>
+    <body>
+        <div class="all">
+        <div class="side-c">
+            <div class="side"></div>
+            <div class="side side2"></div>
+        </div>
+        <div class="helmet-c">
+            <div class="helmet"></div>
+        </div>
+        <div class="mouth-c">
+            <div class="a"></div>
+            <div class="b"></div>
+            <div class="c"></div>
+            <div class="d"></div>
+            <div class="e"></div>
+        </div>
+        <div class="helmet-b">
+            <div class="f"></div>
+            <div class="g"></div>
+        </div>
+        </div>
+    </body>
+</html>

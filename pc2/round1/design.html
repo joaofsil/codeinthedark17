@@ -1,0 +1,69 @@
+
+<div class="sraisins">
+<p>I wish <span>I knew</span> what I am doing.</p>
+<p><span>OLX</span> code in the dark rocks, <span>OLX</span> code in the dark rocks <span>OLX</span> code in the dark rocks</p>
+<p>First, <span>solve the problem</span>. Then, write the code.</p>
+<p>Any fool can <span>write code</span> that a computer can understand. Good programmers write code that humans can understand</p>
+<p>Programming can be fun</span>, so can cryptography; however they should not be combined.</p>
+<p>Computers are good at following <span>instructions</span>, but not at reading your mind.</p>
+<p>Coding, <span>is an ART</span>. Are you an artist?</p>
+<p>Before software can be <span>reusable</span> it first has to be usable.</p>
+<p><span>Any code</span> of your own that you haven't looked at for six or more months might as well have been written by <span>someone else</span>.</p>
+<p>Software <span>sucks</span> because users demand it to.</p>
+</div>
+
+
+<style>
+@font-face lolIDontRememberTheSyntax {
+    
+}
+
+body {
+    position: relative;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+span {
+    font-weight: bold;
+}
+
+@keyframes goDown {
+    from {
+        opacity: 1;
+        top: -100%;
+    }
+    to {
+        opacity: 0;
+        top: 0;
+    }
+} 
+ 
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+ }
+ 
+ .sraisins {
+     transform: rotate(45deg);
+     transform-origin: 0 0;
+     position: absolute;
+     top: -100%;
+     left: 0;
+ }
+ 
+ p {
+     color: green;
+     font-family: Roboto, sans-serif, "you guys rock right";
+     opacity: 0;
+     margin-bottom: 1em;
+     white-space: nowrap;
+     animation: 7s linear goDown infinite;
+ }
+ 
+</style>

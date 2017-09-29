@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <style>
+        .board {
+            position: relative;
+            width: 400px;
+            height: 600px;
+        }
+        .helmet {
+            position: absolute;
+            z-index: 1;
+            width: 80%;
+            left: 50%;
+            top: 0;
+            transform: translateY(-50%);
+        }
+        .helmet-inside {
+            padding-top: 100%;
+            border-radius: 50%;
+            background-image: linear-gradient(to right, #272627 0%, #272627 50%, #1D1D1D 50.1%, #1D1D1D 100%);
+            background-size: 100%;
+        }
+        
+        .helmet-left,
+        .helmet-right {
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            width: 50%;
+            height: 65%;
+            background-color: #000;
+        }
+        
+        .helmet-left {
+            border-radius: 50% 20% 0 0;
+            transform: rotate(5deg);
+            transform-origin: bottom right;
+            left: 0;
+        }
+        .helmet-right {
+            border-radius: 20% 50% 0 0;
+            transform: rotate(-5deg);
+            transform-origin: bottom left;
+            right: 0;
+        }
+        
+        .mouth {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 25%;
+            height: 300px;
+            bottom: 100px;
+            z-index: 3;
+        }
+        .bar {
+            position: absolute;
+            bottom: 0;
+            background-color: #EEE;
+            width: 18%;
+        }
+        
+        .small {
+            height: 50%;
+        }
+        .medium {
+            height: 75%;
+        }
+        .large {
+            height: 100%;
+        }
+        
+        .center {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .small.left {
+            left: 0;
+        }
+        .small.right {
+            right: 0;
+        }
+        
+        .medium.left {
+            left: 20%;
+        }
+        .medium.right {
+            right: 20%;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="board">
+            <div class="helmet">
+                <div class="helmet-inside"></div>
+            </div>
+            
+            <div class="helmet-left"></div>
+            <div class="helmet-right"></div>
+            
+            <div class="mouth">
+                <div class="small bar left"></div>
+                <div class="medium bar left"></div>
+                <div class="large bar center"></div>
+                <div class="medium bar right"></div>
+                <div class="small bar right"></div>
+            </div>
+        </div>
+    </body>
+</html>

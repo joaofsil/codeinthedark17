@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Code in the dark — by joaornmarques</title>
+
+      <style>
+        body{
+          background: url('assets/background.png'), black;
+          background-size: 100% auto;
+          background-position: center;
+          overflow: hidden;
+          margin: 0;
+          padding: 0;
+          animation: background__animate 8s linear infinite;
+        }
+        .spaceship{
+          width: 400px;
+          height: 170px;
+          background-color: rgba(0,0,255,0);
+          position: relative;
+          animation: spaceship__animate 8s linear infinite;
+        }
+        .spaceship__body{
+          z-index: 3;
+          width: 250px;
+          height: 125px;
+          position: absolute;
+          top: 4px;
+          right: 0;
+          border-bottom-left-radius: 50% 50%;
+          border-bottom-right-radius: 50% 50%;
+          border-top-left-radius: 50% 50%;
+          border-top-right-radius: 50% 50%;
+          background-color: rgba(170,170,170,0.7);
+        }
+        .spaceship__body--overlay{
+          height: 145px;
+          top: 0;
+          border-bottom-left-radius: 50% 40%;
+          border-bottom-right-radius: 50% 40%;
+        }
+
+        .spaceship__wing{
+          z-index: 2;
+          height: 50px;
+          width: 250px;
+          background-color: rgba(170,170,170,0.5);
+          position: absolute;
+          
+          border-bottom-left-radius: 20% 50%;
+          border-bottom-right-radius: 20% 50%;
+          border-top-left-radius: 20% 50%;
+          border-top-right-radius: 20% 50%;
+          overflow: hidden;
+        }
+
+        .spaceship__wing--bottom{
+          bottom: 0;
+          left: 0;
+        }       
+
+        .spaceship__wing--top{
+          left: 65px;
+        }
+
+        .spaceship__wing--middle{
+          top: 65px;
+          left: 75px;
+          width: 125px;
+          border-bottom-left-radius: 40% 50%;
+          border-bottom-right-radius: 40% 50%;
+          border-top-left-radius: 40% 50%;
+          border-top-right-radius: 40% 50%;
+        }
+
+        .spaceship__wing-container{
+          position: relative;
+        }
+
+        .spaceship__wing--overlay{
+          height: 34px;
+          position: absolute;
+          top: 0;
+        }
+
+        .spaceship__wing--overlay-bottom{
+          top: 16px;
+        }
+
+        .spaceship__wing--middle-overlay{
+          width: 125px;
+        }
+
+        @keyframes spaceship__animate {
+          0% {transform: rotate(10deg) scale(0.2) translateX(0vw) translateY(0vh);}
+          60% {transform: rotate(10deg) scale(1) translateX(60vw) translateY(40vh);}
+          70% {transform: rotate(10deg) scale(2) translateX(60vw) translateY(40vh);}
+          100% {transform: rotate(10deg) scale(2) translateX(60vw) translateY(40vh);}
+        }
+
+        @keyframes background__animate {
+          0%{background-size: 105% auto; background-position: center;}
+          12.5%{background-size: 100% auto; background-position: center;}
+          12.6%{background-size: 300% auto; background-position: left top;}
+          100%{background-size: 100% auto;}
+        }
+
+      </style>
+
+    </head>
+    <body>
+      <div class="spaceship">
+
+        <div class="spaceship__body">
+          <div class="spaceship__body spaceship__body--overlay"></div>
+        </div>
+        
+        <div class="spaceship__wing spaceship__wing--bottom">
+          <div class="spaceship__wing-container">
+            <div class="spaceship__wing spaceship__wing--overlay"></div>
+            <div class="spaceship__wing spaceship__wing--overlay spaceship__wing--overlay-bottom"></div>
+          </div>
+        </div>
+
+        <div class="spaceship__wing spaceship__wing--top">
+          <div class="spaceship__wing-container">
+            <div class="spaceship__wing spaceship__wing--overlay"></div>
+            <div class="spaceship__wing spaceship__wing--overlay spaceship__wing--overlay-bottom"></div>
+          </div>
+        </div>
+
+        <div class="spaceship__wing spaceship__wing--middle">
+          <div class="spaceship__wing-container">
+            <div class="spaceship__wing spaceship__wing--middle-overlay spaceship__wing--overlay"></div>
+            <div class="spaceship__wing spaceship__wing--middle-overlay spaceship__wing--overlay spaceship__wing--overlay-bottom"></div>
+          </div>
+        </div>
+
+      </div>
+    </body>
+</html>

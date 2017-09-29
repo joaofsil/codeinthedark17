@@ -1,0 +1,107 @@
+<html>
+<style>
+@keyframes move {
+  0% {
+    transform: translate(1cm, 1cm) scale(0.1, 0.1) rotate(20deg) skewX(-20deg);
+  }
+
+  50% {
+    transform: translate(8cm, 4.5cm) scale(1, 1) rotate(20deg) skewX(-20deg);
+  }
+
+  100% {
+    transform: translate(18cm, 9cm) scale(2, 2) rotate(20deg) skewX(-20deg);
+  }
+}
+
+@keyframes expand {
+  from {
+    transform: scale(2, 2);
+    transform-origin: 2cm 2cm;
+  }
+  to {
+    transform: scale(1, 1);
+    transform-origin: 2cm 2cm;
+  }
+}
+
+.outer {
+  width: 16cm; 
+  height: 8cm; 
+  overflow: hidden; 
+  background-color: black; 
+  position: relative;
+}
+
+#background {
+  background-color: black;
+  position: absolute;
+  animation: expand 7s;
+}
+
+#spaceship {
+  position: relative;
+
+  transform-origin: 0 0;
+  animation: move 7s linear infinite;
+}
+
+.piece {
+  position: relative;
+}
+
+.piece .normal, .piece .shadow {
+ width: 1cm;
+ height: 1cm;  
+ background-color: grey;
+ position: absolute;
+ border-radius: 2cm;
+}
+
+.piece .normal {
+  opacity: 0.8;
+  top: 0;
+}
+
+.piece .shadow {
+ opacity: 0.5;
+ top: 0.15cm;
+}
+
+#a div {
+  transform: scale(2, 0.3) translateY(-1cm);
+}
+
+#b div {
+  transform: scale(2, 0.3) translate(0cm, 3cm) translateY(-1cm);
+}
+
+#c div {
+  transform: translate(0cm, 0.5cm) scale(0.5, 0.3) translateY(-1cm);
+}
+
+#d div {
+  transform: translate(1.1cm, 0.1cm) scale(2, 1);
+}
+
+</style>
+<body>
+  <div class="outer">
+    <img id="background" src="assets/background.png" />
+    <div id="spaceship">
+      <div id="a" class="piece">
+       <div class="normal"></div><div class="shadow"></div>
+      </div>
+      <div id="b" class="piece">
+       <div class="normal"></div><div class="shadow"></div>
+      </div>
+      <div id="c" class="piece">
+       <div class="normal"></div><div class="shadow"></div>
+      </div>
+      <div id="d" class="piece">
+       <div class="normal"></div><div class="shadow"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

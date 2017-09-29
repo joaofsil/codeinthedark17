@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #000;
+                color: rgb(0 255 0);
+                font-family: Roboto;
+            }
+            
+            .main-content {
+                transform: rotate(90deg);
+            }
+            
+            p:nth-child(odd) {
+                margin-left: 100px;
+            }
+            
+            @keyframe speed {
+                0% {
+                    top: 0;
+                    opacity: 0;
+                }
+                
+                50% {
+                    top: 50%;
+                    opacity: 1;
+                }
+                
+                100% {
+                    top: 100%;
+                    opacity: 0;
+                }
+            }
+            
+            
+            .main-content .slow {
+                transform: animation(speed linear 4s ease-in);
+            }
+            
+            .main-content .fast {
+                transform: animation(speed linear 2s ease-out);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-content">
+            <p class="slow">I wish <span>I knew</span> what I am doing.</p>
+            <p class="fast"><span>OLX</span> code in the dark rocks, <span>OLX</span> code in the dark rocks <span>OLX</span> code in the dark rocks</p>
+            <p class="slow">First, <span>solve the problem</span>. Then, write the code.</p>
+            <p class="fast">Any fool can <span>write code</span> that a computer can understand. Good programmers write code that humans can understand</p>
+            <p class="slow">Programming can be fun</span>, so can cryptography; however they should not be combined.</p>
+            <p class="slow">Computers are good at following <span>instructions</span>, but not at reading your mind.</p>
+            <p class="fast">Coding, <span>is an ART</span>. Are you an artist?</p>
+            <p class="slow">Before software can be <span>reusable</span> it first has to be usable.</p>
+            <p class="slow"><span>Any code</span> of your own that you haven't looked at for six or more months might as well have been written by <span>someone else</span>.</p>
+            <p class="fast">Software <span>sucks</span> because users demand it to.</p>
+        </div>
+        
+    </body>
+</html>

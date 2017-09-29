@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    body, html {
+      background-color: #000;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    @keyframes background {
+      0% { transform: scale(4,4) }
+      100 { transform: scale(1,1) }
+    }
+
+    #stars {
+      background: url("assets/background.png");
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      animation-name: background;
+      animation-duration: 8s;
+      position: relative;
+      overflow: hidden;
+      background-position: top;
+      animation-iteration-count: infinite;
+    }
+
+
+    @keyframes spaceship {
+      0% {
+        top: 0px;
+        left: 10px;
+        -ms-transform: scale(0.5,0.25) rotate(20deg);
+        -webkit-transform: scale(0.5,0.25) rotate(20deg);
+        transform: scale(0.5,0.25) rotate(20deg);
+      }
+      90% {
+        top: 80%;
+        left: 80%;
+        -ms-transform: scale(1.5,0.75) rotate(20deg);
+        -webkit-transform: scale(1.5,0.75) rotate(20deg);
+        transform: scale(1.5,0.75) rotate(20deg);
+
+       }
+       100% {
+         top: 110%;
+         left: 110%;
+         -ms-transform: scale(1.5,0.75) rotate(20deg);
+         -webkit-transform: scale(1.5,0.75) rotate(20deg);
+         transform: scale(1.5,0.75) rotate(20deg);
+
+        }
+    }
+
+    #spaceship {
+      animation-name: spaceship;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+      position: absolute;
+      z-index: 100;
+
+    }
+
+    #bubble {
+      width: 200px;
+      border-radius: 100px;
+      height: 200px;
+      background: #eee;
+      opacity: 0.8;
+      position:relative;
+      margin-left: 75px;
+      margin-top:30px;
+    }
+
+    #bubble-light {
+      width: 175px;
+      border-radius: 88px;
+      height: 175px;
+      background: #fff;
+      opacity: 1;
+      position:absolute;
+      top: 0;
+      left: 7px;
+      z-index:200;
+    }
+
+    #tails {
+      margin-top: 50px;
+      margin-right: 50px;
+      width: 150px;
+      height: 200px;
+      opacity: 0.6;
+      position:absolute;
+    }
+
+    #tail1 {
+      width: 125px;
+      border-radius: 18px;
+      height: 36px;
+      background: #eee;
+      opacity: 0.8;
+      position:absolute;
+      top: 0;
+      left: 13px;
+      z-index:200;
+    }
+    #tail1-light {
+      width: 125px;
+      border-radius: 18px;
+      height: 22px;
+      background: #fff;
+      opacity: 1;
+      position:relative;
+      top: 0;
+      left: 0px;
+      z-index:200;
+    }
+
+    #tail3 {
+      width: 125px;
+      border-radius: 18px;
+      height: 36px;
+      background: #eee;
+      opacity: 0.8;
+      position:absolute;
+      top: 100px;
+      left: 13px;
+      z-index:200;
+    }
+    #tail3-light {
+      width: 125px;
+      border-radius: 18px;
+      height: 22px;
+      background: #fff;
+      opacity: 1;
+      position:relative;
+      top: 0;
+      left: 0px;
+      z-index:200;
+    }
+    #tail2 {
+      width: 70px;
+      border-radius: 18px;
+      height: 36px;
+      background: #fff;
+      opacity: 0.8;
+      position:absolute;
+      top: 50px;
+      left: 50px;
+      z-index:200;
+    }
+    #tail2-light {
+      width: 70px;
+      border-radius: 18px;
+      height: 22px;
+      background: #fff;
+      opacity: 1;
+      position:relative;
+      top: 0;
+      left: 0px;
+      z-index:200;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div id="stars">
+
+    </div>
+    <div id="spaceship">
+      <div id="tails">
+        <div id="tail1"><div id="tail1-light"></div></div>
+        <div id="tail2"><div id="tail2-light"></div></div>
+        <div id="tail3"><div id="tail3-light"></div></div>
+      </div>
+      <div>
+        <div id="bubble">
+          <div id="bubble-light">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

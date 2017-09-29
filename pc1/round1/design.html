@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <style>
+            @font-face url("assets/Roboto-Regular.woff");
+            
+            ul {
+                background: #000;
+                color: green;
+                font-family: "Roboto";
+                width: 1024px;
+                height: 768px;
+                transform: rotateZ(45deg);
+                overflow: hidden;
+            }    
+            
+            @keyframes line {
+                0% {
+                    transform: translateX(-100%);
+                }
+                
+                100% {
+                    transform: translateX(100%);
+                }
+            }
+            
+            @keyframes line-fade {
+                0% {
+                    transform: translateX(-100%);
+                    opacity: 1;
+                }
+                
+                50% {
+                    opacity: 0;
+                }
+                
+                100% {
+                    transform: translateX(100%);
+                }
+            }
+            
+            li {
+                animation: line 3s infinite;
+            }
+            
+            li.fade {
+                animation: line-fade 3s infinite;
+            }
+            
+            
+            .fast {
+                animation-duration: 8s;
+            }
+            
+            .slow {
+                animation-duration: 12s;
+            }
+            
+            .melancia {
+                animation-duration: 16s;
+            }
+            
+            .t {
+                opacity: 0.5;
+            }
+            
+            .t2 {
+                opacity: 0.8;
+            }
+            
+            li span {
+                opacity: 1 !important;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="melancia fade">I wish <span>I knew</span> what I am doing.</li>
+<li class="melancia t"><span>OLX</span> code in the dark rocks, <span>OLX</span> code in the dark rocks <span>OLX</span> code in the dark rocks</li>
+<li class="slow t2">First, <span>solve the problem</span>. Then, write the code.</li>
+<li class="fast">Any fool can <span>write code</span> that a computer can understand. Good programmers write code that humans can understand</li>
+<li class="melancia fade">Programming can be fun</span>, so can cryptography; however they should not be combined.</li>
+<li class="slow t">Computers are good at following <span>instructions</span>, but not at reading your mind.</li>
+<li class="fast t2 fade">Coding, <span>is an ART</span>. Are you an artist?</li>
+<li class="melancia">Before software can be <span>reusable</span> it first has to be usable.</li>
+<li class="slow t2"><span>Any code</span> of your own that you haven't looked at for six or more months might as well have been written by <span>someone else</span>.</li>
+<li class="fast t">Software <span>sucks</span> because users demand it to.</li>
+
+            <li class="melancia fade">I wish <span>I knew</span> what I am doing.</li>
+<li class="melancia t"><span>OLX</span> code in the dark rocks, <span>OLX</span> code in the dark rocks <span>OLX</span> code in the dark rocks</li>
+<li class="slow t2">First, <span>solve the problem</span>. Then, write the code.</li>
+<li class="fast">Any fool can <span>write code</span> that a computer can understand. Good programmers write code that humans can understand</li>
+<li class="melancia fade">Programming can be fun</span>, so can cryptography; however they should not be combined.</li>
+<li class="slow t">Computers are good at following <span>instructions</span>, but not at reading your mind.</li>
+<li class="fast t2 fade">Coding, <span>is an ART</span>. Are you an artist?</li>
+<li class="melancia">Before software can be <span>reusable</span> it first has to be usable.</li>
+<li class="slow t2"><span>Any code</span> of your own that you haven't looked at for six or more months might as well have been written by <span>someone else</span>.</li>
+<li class="fast t">Software <span>sucks</span> because users demand it to.</li>
+        </ul>
+    </body>
+</html>

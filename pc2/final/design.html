@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <style>
+            .helmet {
+                
+            }
+            
+            .top {
+                width: 400px;
+                height: 400px;
+                z-index: 10;
+                position: relative;
+            }
+            
+            .topleft,
+            .topright {
+                width: 200px;
+                height: 400px;
+                position: absolute;
+                overflow: hidden;
+            }
+            
+            .topleft {
+                top: 0;
+                left: 0;
+            }
+            
+            .topright {
+                top: 0;
+                right: 0;
+            }
+            
+            .topleftinner,
+            .toprightinner {
+                height: 400px;
+                width: 400px;
+                border-radius: 50%;
+            }
+            
+            .topleftinner {
+                background-color:#272627;
+            }
+            
+            .toprightinner {
+                width: 400px;
+                background-color: #1D1D1D;
+            }
+            
+            .bottom {
+                z-index: 5;
+                transform: translateY(-100px);
+                width: 400px;
+                height: 500px;
+                position: relative;
+            }
+            
+            .breather {
+                position: absolute;
+                bottom: 60px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 140px;
+                z-index: 20;
+            }
+            
+            .bottomleft,
+            .bottomright {
+                width: 200px;
+                height: 400px;
+                background: black;
+                position: absolute;
+                bottom: 0;
+            }
+            
+            .bottomleft {
+                left: 0;
+                transform-origin: bottom right;
+                transform: rotateZ(30deg);
+            }
+            
+            .bottomright {
+                right: 0;
+                transform-origin: bottom left;
+                transform: rotateZ(-30deg);
+            }
+            
+            .line {
+                background-color: #EEE;
+                width: 20px;
+            }
+            
+            .l1, .l5 {
+                height: 40px;
+            }
+            
+            .l2, .l4 {
+                height: 60px;
+            }
+            
+            .l3 {
+                height: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="helmet">
+            <div class="top">
+                <div class="topleft">
+                    <div class="topleftinner"></div>
+                </div>
+                <div class="topright">
+                    <div class="toprightinner"></div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="bottomleft">
+                </div>
+                <div class="bottomright">
+                </div>
+                <div class="breather">
+                    <div class="line l1"></div>
+                    <div class="line l2"></div>
+                    <div class="line l3"></div>
+                    <div class="line l4"></div>
+                    <div class="line l5"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

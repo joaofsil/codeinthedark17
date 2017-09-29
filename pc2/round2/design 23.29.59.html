@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>I'm Fuu***cked up</title>
+        <style>
+           *,*:before, *:after{
+               box-sizing: border-box;
+           } 
+           
+           html,
+            body{
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                background: black;
+            }
+            
+            :root{
+                --red: #E60003;
+            }
+            
+            .o-wrapper{
+                display: flex;
+                width: 100%;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .c-spaceship{
+                position: relative;
+                width: 200px;
+                height: 60vh;
+            }
+            
+                .c-spacehip__body{
+                    position: relative;
+                    z-index: 2;
+                    display: block;
+                    margin: 0 auto;
+                    width: 50%;
+                    height: 50%;
+                    background-color: var(--red);
+                    border-radius: 40%;
+                }
+                
+                .c-spaceship__rocket{
+                    background-color: var(--red);
+                    position: absolute;
+                    height: 80px;
+                    border-top-right-radius: 50%;
+                    border-top-left-radius: 50%;
+                    border-bottom-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    bottom: 0;
+                    box-shadow: 0px 8px 12px rgba(0,0,0,0.9);
+                
+                }
+                
+                
+                .c-spaceship__rocket.first{
+                    left: 0;
+                }
+                 .c-spaceship__rocket.last{
+                    right: 0;
+                }
+                
+                .c-spaceshipt__rocket--main{
+                    z-index: 3;
+                    left: 50%;
+                    height: 140px;
+                    border-top-right-radius: 70%;
+                    border-top-left-radius: 70%;
+                    transform: translate(-50%, 20%);
+                    background-image: linear-gradient(to left, white 50%, var(--red) 100%);
+                    background-repeat: repeat;
+                    background-size: 150% 30px;
+                    
+                }
+                    
+                    
+        </style>
+    </head>
+    <body>
+        <div class="o-wrapper">
+            
+            <div class="c-spaceship">
+                <div class="c-spaceshipt__body"></div>
+                <div class="c-spaceship__rocket first"></div>
+                <div class="c-spaceship__rocket c-spaceship__rocket--main"></div>
+                <div class="c-spaceship__rocket last"></div>
+            </div>
+        </div>
+        
+    </body>
+</html>

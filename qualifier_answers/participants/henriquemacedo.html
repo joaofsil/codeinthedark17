@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Code in the Dark / Pixels Camp</title>
+<meta name="author" content="Henrique Macedo">
+<style type="text/css" media="screen">
+  html, body {
+    margin: 0;
+  }
+
+  body {
+    background-color: #000000;
+  }
+
+  @keyframes move_bg {
+    0% {
+      transform: scale(3.0);
+    }
+    100% {
+      transform: scale(1.0);
+    }
+  }
+
+  @keyframes move_spaceship {
+    0% {
+      transform: scale(0) rotate(10deg);
+      top: 0;
+      left: 0;
+    }
+    100% {
+      transform: scale(2.0) rotate(10deg);
+      top: 100%;
+      left: 100%;
+    }
+  }
+
+  .container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/background.png");
+    background-position: center;
+    background-size: cover;
+    transition: all .5s;
+    animation: move_bg 6s linear infinite;
+  }
+
+  .spaceship {
+    position: absolute;
+    display: inline-block;
+    transition: all .5s;
+    animation: move_spaceship 6s ease-in infinite;
+  }
+
+  .spaceship ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .spaceship li {
+    margin-bottom: 5px;
+    margin-left: 60px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #666666 20%, #999999, #666666 80%);
+    list-style: none;
+  }
+
+  .spaceship li:first-child {
+    margin-left: 50px;
+    width: 200px;
+  }
+
+  .spaceship li:last-child {
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 200px;
+  }
+
+  .spaceship_cockpit {
+    position: absolute;
+    top: -10px;
+    right: -80px;
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #666666 10%, #999999 40%);
+  }
+</style>
+</head>
+<body>
+  <div class="container"></div>
+  <div class="spaceship">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="spaceship_cockpit"></div>
+  </div>
+</body>

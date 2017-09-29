@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CodePen - A Pen by  João Sardinha</title>
+<style>
+      html {
+  height: 100%;
+}
+body {
+  background-color: #000;
+  height: 100%;
+  margin: 0;
+}
+
+@keyframes SkyAnimation {
+  0% {
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: scale(1);
+    transform-origin: 50% 50%;
+  }
+  12% {
+    transform: scale(1);
+    transform-origin: 10% 10%;
+  }
+  13% {
+    transform: scale(3);
+    transform-origin: 15% 15%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 50% 50%;
+  }
+}
+
+.Sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  background-image: url("https://codeinthedark.pixels.camp/challenge/2017-codeinthedark-bbe7c06a-f18b2f49975e948e/assets/background.png");
+  background-position: center;
+  background-size: cover;
+  transform: scale(2);
+  transform-origin: top left;
+  animation: SkyAnimation 7.8s infinite;
+}
+
+@keyframes SpaceshipAnimation {
+  0% {
+    transform: scale(0.2) translate(-1000vw, -2000vh);
+    /* transform: scale(0) translate(-200%, -200%); */
+  }
+  5% {
+    transform: scale(0.2) translate(-50vw, -50vh);
+    /* transform: scale(0.3) translate(-100%, -100%); */
+  }
+  100% {
+    transform: scale(1.5) translate(100vw, 100vh);
+  }
+}
+
+.Spaceship {
+  position: absolute;
+  z-index: 1;
+  width: 320px;
+  height: 160px;
+  transform-origin: center;
+  animation: SpaceshipAnimation 7.8s infinite;
+  transform: scale(0.2) translate(-1000vw, -2000vh);
+}
+.Spaceship__component {
+  position: absolute;
+  background-color: hsla(0, 0%, 65%, 0.95);
+  box-shadow: inset 0 -25px 0 hsla(0, 0%, 40%, 0.8);
+  opacity: 0;
+}
+.Spaceship__cockpit {
+  opacity: 1;
+  top: 20px;
+  right: 0;
+  width: 60%;
+  height: 70%;
+  border-radius: 50%;
+  transform: rotate(6deg);
+  box-shadow: inset 0 -20px 0 hsla(0, 0%, 55%, 0.8);
+}
+.Spaceship__left {
+  opacity: 1;
+  width: 50%;
+  height: 23%;
+  box-shadow: inset 0 -15px 0 hsla(0, 0%, 60%, 0.8);
+  border-radius: 40% 40% 40% 40%;
+  transform: rotate(7deg);
+  top: 5%;
+  left: 20%;
+}
+.Spaceship__center {
+  opacity: 1;
+  width: 30%;
+  height: 24%;
+  box-shadow: inset 0 -15px 0 hsla(0, 0%, 60%, 0.8);
+  border-radius: 40% 40% 40% 40%;
+  transform: rotate(8deg);
+  top: 30%;
+  left: 25%;
+}
+.Spaceship__right {
+  opacity: 1;
+  width: 60%;
+  height: 25%;
+  box-shadow: inset 0 -15px 0 hsla(0, 0%, 60%, 0.8);
+  border-radius: 40% 40% 40% 40%;
+  transform: rotate(7deg);
+  z-index: 1;
+  top: 58%;
+  left: 10%;
+}
+</style>
+</head>
+<body>
+<div class="Sky"></div>
+<div class="Spaceship">
+  <div class="Spaceship__component Spaceship__cockpit"></div>
+  <div class="Spaceship__component Spaceship__left"></div>
+  <div class="Spaceship__component Spaceship__center"></div>
+  <div class="Spaceship__component Spaceship__right"></div>
+</div>
+</body>
+</html>

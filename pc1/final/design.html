@@ -1,0 +1,95 @@
+<style>
+    body {
+        background-color: white;
+    }
+    
+    #root {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        backround-color: #cccccc;
+    }
+    
+    .a {
+        position: absolute;
+        background-color: #333333;
+        width: 100px;
+        height: 300px;
+        bottom: 80px;
+    }
+    
+    .a1 {
+        right: 50%;
+        transform: rotate(25deg);
+    }
+    
+    .a2 {
+        left: 50%;
+        transform: rotate(-25deg);
+    }
+    
+    .c1 {
+        position: absolute;
+        background-color: #555555;
+        width: 100px;
+        height: 100px;
+        border-radius: 100% 0 0 100%;
+        right: 50%;
+    }
+    
+    .c2 {
+        position: absolute;
+        background-color: #666666;
+        width: 100px;
+        height: 100px;
+        border-radius: 0 100% 100% 0;
+        left: 50%;
+    }
+    
+    #bars {
+        display: flex;
+        position: absolute;
+        bottom: 110px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70px;
+        height: 60px;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    
+    .b {
+        background-color: white;
+        width: 10px;
+    }
+    
+    .b1 {
+        height: 20px; 
+    }
+    
+    .b2 {
+        height: 40px;
+    }
+    
+    .b3 {
+        height: 60px;
+    }
+</style>
+
+<body>
+    <div id="root">
+        <div id="bars">
+            <div class="b b1"></div>
+            <div class="b b2"></div>
+            <div class="b b3"></div>
+            <div class="b b2"></div>
+            <div class="b b1"></div>
+        </div>
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="a a1"></div>
+        <div class="a a2"></div>
+    </div>
+</body>

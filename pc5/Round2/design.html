@@ -1,0 +1,61 @@
+<style>
+    body {
+        background-color: black;
+    }
+    
+    #root {
+        position: relative;
+        width: 100px;
+    }
+    
+    #a {
+        background-color: red;
+        position: absolute;
+        width: 30px;
+        height: 100px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 60px;
+        border-radius: 100% 100% 50% 50%;
+        border: 1px solid black;
+    }
+    
+    #b {
+        background-color: red;
+        position: absolute;
+        width: 20px;
+        height: 80px;
+        border: 1px solid black;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 100% 100% 50% 50%;
+    }
+    
+    .c {
+        background-color: red;
+        positon: absolute;
+        width: 10px;
+        height: 30px;
+        border-radius: 100% 100% 50% 50%;
+        bottom: 10px;
+    }
+    
+    .c1 {
+        left: 0;
+    }
+    
+    .c2 {
+        right: 0;
+    }
+</style>
+
+<body>
+    <div id="root">
+        <div class="c c1"></div>
+        <div class="c c2"></div>
+        <div id="a"></div>
+        <div id="b"></div>
+    </div>    
+</body>
