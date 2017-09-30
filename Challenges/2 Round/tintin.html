@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title>Challenge TT HTML / CSS</title>
+    <style>
+        body {
+            background: black;
+            overflow: hidden;
+        }
+
+        .rocket {
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .rocket-body {
+            width: 8vw;
+            height: 25vw;
+            background-color: #e60003;
+            overflow: hidden;
+            margin: 0 auto;
+            border-radius: 100% 100% 50% 50%;
+            box-shadow: 0 0 20px black;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rocket-body-stripe-1,
+        .rocket-body-stripe-2,
+        .rocket-body-stripe-last {
+            height: 3vw;
+            background: #E60003;
+            margin-top: -1vw;
+            border-radius: 100% 100% 0 0;
+        }
+
+        .rocket-body-stripe-1 {
+            background: -webkit-linear-gradient( 0deg, white 0%, white 33.33%, #E60003 33.33%, #E60003 66.66%, white 66.66%, white 66.66%)
+        }
+
+        .rocket-body-stripe-2 {
+            background: -webkit-linear-gradient( 0deg, #E60003 0%, #E60003 33.33%, white 33.33%, white 66.66%, #E60003 66.66%, #E60003 66.66%)
+        }
+
+        .rocket .fin {
+            display: flex;
+            width: 15vw;
+            margin: -4vw auto 0;
+            justify-content: space-around;
+        }
+
+        .fin-left,
+        .fin-middle,
+        .fin-right {
+            height: 10vw;
+            width: 4vw;
+            background-color: #e60003;
+        }
+
+        .fin-left {
+            border-radius: 80% 30% 30% 30%;
+        }
+
+        .fin-middle {
+            border-radius: 80% 80% 30% 30%;
+            z-index: 999;
+            box-shadow: 0 0 20px black;
+            margin-top: -3vw;
+            height: 16vw
+        }
+
+        .fin-right {
+            border-radius: 30% 80% 30% 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rocket">
+        <div class="rocket-body">
+            <div class="rocket-body-stripe-first"></div>
+            <div class="rocket-body-stripe-last"></div>
+            <div class="rocket-body-stripe-1"></div>
+            <div class="rocket-body-stripe-2"></div>
+            <div class="rocket-body-stripe-1"></div>
+            <div class="rocket-body-stripe-2"></div>
+            <div class="rocket-body-stripe-1"></div>
+            <div class="rocket-body-stripe-last"></div>
+        </div>
+
+        <div class="fin">
+            <div class="fin-left"></div>
+            <div class="fin-middle"></div>
+            <div class="fin-right"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

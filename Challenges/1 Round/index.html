@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Code in the dark - Matrix</title>
+   <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<style>
+@font-face {
+   font-family: 'Roboto';
+   src: url('assets/Roboto-Regular.woff') format('woff');
+}
+
+body {
+   background: #000;
+}
+
+#matrix {
+   margin: 1em auto;
+   font-family: 'Roboto';
+   margin-top: 10%;
+   width: 100%;
+   height: 600px;
+   overflow: hidden;
+   color: rgba(0, 255, 0, .7);
+   text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
+   position: relative;
+   background-color: #000;
+}
+
+@-webkit-keyframes fade {
+   0% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+   }
+}
+
+@-webkit-keyframes fall {
+   from {
+      top: -190%;
+   }
+   to {
+      top: 0%;
+   }
+}
+
+@-webkit-keyframes fall1 {
+   from {
+      top: -130%;
+   }
+   to {
+      top: 0%;
+   }
+}
+
+@-webkit-keyframes fall2 {
+   from {
+      top: -120%;
+   }
+   to {
+      top: 0%;
+   }
+}
+
+@-webkit-keyframes fall3 {
+   from {
+      top: -140%;
+   }
+   to {
+      top: 0%;
+   }
+}
+
+@-webkit-keyframes fall4 {
+   from {
+      top: -120%;
+   }
+   to {
+      top: 0%;
+   }
+}
+
+#matrix div {
+   position: absolute;
+   -webkit-transform-origin: 0%;
+   -webkit-transform: rotate(90deg);
+   -webkit-animation-name: fall, fade;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+   -webkit-animation-timing-function: ease-out;
+}
+
+#matrix span {
+   color: rgb(0, 255, 0);
+   text-shadow: rgb(255, 255, 255) 0px 0px 5px;
+}
+
+.text {
+   color: rgba(0, 255, 0, .5);
+   width: 100%;
+}
+
+.f1 {
+   font-size: 1.3em;
+}
+
+.f2 {
+   font-size: 2.0em;
+}
+
+.d1 {
+   -webkit-animation-duration: 8s;
+   -webkit-animation-name: fall1, fade;
+   top: -200px
+}
+
+.d2 {
+   -webkit-animation-duration: 12s;
+   -webkit-animation-name: fall2, fade;
+   top: -100px
+}
+
+.d3 {
+   -webkit-animation-duration: 9s;
+   -webkit-animation-name: fall3, fade;
+   top: -50px
+}
+
+.d4 {
+   -webkit-animation-duration: 11s;
+   -webkit-animation-name: fall4, fade;
+   top: 100px
+}
+
+.d5 {
+   -webkit-animation-duration: 12s;
+   -webkit-animation-name: fall1, fade;
+   top: 150px
+}
+
+.d6 {
+   -webkit-animation-duration: 10s;
+   -webkit-animation-name: fall2, fade;
+}
+
+.d7 {
+   -webkit-animation-duration: 10s;
+   -webkit-animation-name: fall3, fade;
+}
+
+.d8 {
+   -webkit-animation-duration: 9s;
+   -webkit-animation-name: fall4, fade;
+}
+</style>
+
+<body>
+
+   <div id="matrix">
+
+      <div class="text d1 f1" style="left:12%;"><span>OLX</span> code in the dark rocks, <span>OLX</span> code in the dark rocks <span>OLX</span> code in the dark rocks</div>
+
+      <div class="text d2 f2" style="left:16%;">First, <span>solve the problem</span>. Then, write the code.</div>
+
+      <div class="text d3 f1" style="left:20%;">Any fool can <span>write code</span> that a computer can understand. Good programmers write code that humans can understand</div>
+
+      <div class="text d4 f2" style="left:24%;"><span>Programming can be fun</span>, so can cryptography; however they should not be combined. </div>
+
+      <div class="text d5 f1" style="left:28%;">Computers are good at following <span>instructions</span>, but not at reading your mind.</div>
+
+      <div class="text d6 f2" style="left:32%;"><span>Working at <span>OLX</span> is the coolest place in the world</div>
+
+      <div class="text d7 f1" style="left:36%;">OLX <span>code</span> in the dark rocks, <span>OLX</span> code in the dark rocks <span>OLX</span> code in the dark rocks, <span>OLX</span> code in the dark rocks</div>
+
+      <div class="text d8 f2" style="left:40%;">Coding, <span>is an ART</span>. Are you an artist?</div>
+
+      <div class="text d1 f1" style="left:44%;">Any fool can write code that a computer can understand. <span>Good programmers</span> write code that humans can understand</div>
+
+      <div class="text d2 f2" style="left:50%;"><span>Computers</span> are good at following instructions, but not at reading your mind.</div>
+
+      <div class="text d3 f1" style="left:54%;">Working at <span>OLX</span> is the coolest place in the world</div>
+
+      <div class="text d4 f2" style="left:58%;">First, solve the problem. Then, write the code.</div>
+
+      <div class="text d6 f2" style="left:66%;">Before software can be <span>reusable</span> it first has to be usable.</div>
+
+      <div class="text d7 f1" style="left:70%;">OLX tech hub Lisbon</div>
+
+      <div class="text d3 f1" style="left:78%;">OLX <span>code</span> in the dark rocks, <span>OLX</span> code in the dark rocks <span>OLX</span> code in the dark rocks, <span>OLX</span> code in the dark rocks</div>
+
+      <div class="text d4 f2" style="left:82%;"><span>Any code</span> of your own that you haven't looked at for six or more months might as well have been written by <span>someone else</span>. </div>
+
+      <div class="text d5 f1" style="left:86%;">Software <span>sucks</span> because users demand it to.</div>
+
+      <div class="text d7 f1" style="left:94%;"><span>Linux</span> is only free if your <span>time</span> has no value.</div>
+
+      <div class="text d8 f2" style="left:98%;">OLX <span>code</span> in the dark rocks, <span>OLX</span> code in the dark rocks <span>OLX</span> code in the dark rocks, <span>OLX</span> code in the dark rocks</div>
+   </div>
+
+</body>
+
+</html>

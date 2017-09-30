@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <title>Challenge TT HTML / CSS</title>
+    <style>
+        .container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .helmet-top {
+            margin: 0 auto;
+            height: 20vw;
+            width: 20vw;
+            border-radius: 100%;
+            background: #272627;
+            overflow: hidden;
+        }
+
+        .helmet-top-half {
+            height: 20vw;
+            width: 10vw;
+            margin-left: 10vw;
+            background: #1D1D1D;
+        }
+
+        .helmet-middle {
+            position: relative;
+            margin-top: -15vw;
+            overflow: hidden;
+            display: flex;
+            justify-content: center
+        }
+
+        .helmet-middle-left {
+            border-style: solid;
+            height: 0;
+            border-color: transparent #272627 #272627 transparent;
+            border-width: 0 7vw 20vw 7vw
+        }
+
+        .helmet-middle-right {
+            border-style: solid;
+            height: 0;
+            border-color: transparent transparent #1D1D1D #1D1D1D;
+            border-width: 0 7vw 20vw 7vw
+        }
+
+        .helmet-middle-shaddow-right,
+        .helmet-middle-shaddow-left {
+            position: absolute;
+            background: black;
+            top: 6vw;
+            width: 25vw;
+            height: 60vw;
+            border-radius: 100%
+        }
+
+        .helmet-middle-shaddow-left {
+            margin-left: -3vw
+        }
+
+        .helmet-middle-shaddow-right {
+            margin-left: 3vw
+        }
+
+        .helmet-shadow {
+            height: 40vw;
+            width: 30vw;
+            border-radius: 100%;
+        }
+
+        .helmet-bottom {
+            width: 0;
+            heigth: 0;
+            margin: 0 auto;
+            border: solid;
+            border-color: black transparent transparent;
+            border-width: 4vw 14vw 0
+        }
+
+        .helmet-breather {
+            height: 10vw;
+            margin-top: -10vw;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .helmet-breather * {
+            width: 1vw;
+            height: 7vw;
+            background: #EEE;
+            margin: 0 0.5vw 0 0;
+        }
+
+        .helmet-breather-5,
+        .helmet-breather-1 {
+            height: 3vw
+        }
+
+        .helmet-breather-4,
+        .helmet-breather-2 {
+            height: 5vw
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="helmet-top">
+            <div class="helmet-top-half"></div>
+        </div>
+        <div class="helmet-middle">
+            <div class="helmet-middle-left"></div>
+            <div class="helmet-middle-right"></div>
+            <div class="helmet-middle-shaddow-left"></div>
+            <div class="helmet-middle-shaddow-right"></div>
+        </div>
+        <div class="helmet-breather">
+            <div class="helmet-breather-1"></div>
+            <div class="helmet-breather-2"></div>
+            <div class="helmet-breather-3"></div>
+            <div class="helmet-breather-4"></div>
+            <div class="helmet-breather-5"></div>
+        </div>
+        <div class="helmet-bottom"></div>
+    </div>
+
+</body>
+
+</html>
